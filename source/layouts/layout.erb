@@ -9,22 +9,27 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Vivek Patel" %></title>
 
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300|Merriweather:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300|Merriweather:400,700,400italic|Roboto+Slab:100' rel='stylesheet' type='text/css'>
+
 
     <%= stylesheet_link_tag :site %>
   </head>
 
   <body class="<%= page_classes %>">
     <nav class="nav">
+    <span class="logo">VNP</span>
+
       <ul>
         <li id="home" class="home"><%=link_to "Home", "#"%></li>
         <li id="projects" class="projects"><%=link_to "Projects", "#" %></li>
         <li id="contact" class="contact"><%=link_to "Contact", "#" %></li>
+         <div id="underline" class="underline"></div>
+
       </ul>
-      <div id="underline" class="underline"></div>
     </nav>
+
     <%= yield %>
   </body>
     <%= javascript_include_tag :all %>
-  
+
 </html>
