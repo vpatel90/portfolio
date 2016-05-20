@@ -1,4 +1,3 @@
-// This is where it all goes :)
 //= require jquery
 var ready;
 ready = function() {
@@ -26,5 +25,4 @@ ready = function() {
 	});
 }
 
-$(document).ready(ready);
-$(document).on('page:load', ready);
+ready();
