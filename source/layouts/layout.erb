@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Vivek Patel" %></title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300|Merriweather:400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <%= stylesheet_link_tag :site %>
+    <%= javascript_include_tag :all %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <nav class="nav">
+      <ul>
+        <li class="home"><%=link_to "Home", "index.html"%></li>
+        <li class="projects"><%=link_to "Projects", "index.html" %></li>
+        <li class="contact"><%=link_to "Contact", "index.html" %></li>
+      </ul>
+    </nav>
+    <%= yield %>
+  </body>
+</html>
