@@ -12,17 +12,19 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300|Merriweather:400,700,400italic' rel='stylesheet' type='text/css'>
 
     <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
   </head>
 
   <body class="<%= page_classes %>">
     <nav class="nav">
       <ul>
-        <li class="home"><%=link_to "Home", "index.html"%></li>
-        <li class="projects"><%=link_to "Projects", "index.html" %></li>
-        <li class="contact"><%=link_to "Contact", "index.html" %></li>
+        <li id="home" class="home"><%=link_to "Home", "#"%></li>
+        <li id="projects" class="projects"><%=link_to "Projects", "#" %></li>
+        <li id="contact" class="contact"><%=link_to "Contact", "#" %></li>
       </ul>
+      <div id="underline" class="underline"></div>
     </nav>
     <%= yield %>
   </body>
+    <%= javascript_include_tag :all %>
+  
 </html>
