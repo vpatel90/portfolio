@@ -10,6 +10,7 @@
     <title><%= current_page.data.title || "Vivek Patel" %></title>
 
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300|Merriweather:400,700,400italic|Roboto+Slab:100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/museo_300_macroman/stylesheet.css" type="text/css" charset="utf-8" />
 
 
     <%= stylesheet_link_tag :site %>
@@ -30,6 +31,8 @@
 
     <%= yield %>
   </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+
     <%= javascript_include_tag :all %>
 
 </html>

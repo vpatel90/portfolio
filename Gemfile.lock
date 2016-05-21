@@ -33,7 +33,7 @@ GEM
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
     eventmachine (1.2.0.1)
-    execjs (2.6.0)
+    execjs (2.7.0)
     fast_blank (1.0.0)
     fastimage (2.0.0)
       addressable (~> 2)
@@ -86,12 +86,14 @@ GEM
       servolux
       tilt (~> 1.4.1)
       uglifier (~> 3.0)
-    middleman-jquery (2.1.1)
-      thor (>= 0.14, < 2.0)
     middleman-livereload (3.4.6)
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
+    middleman-react (0.13.3)
+      execjs
+      middleman-core (>= 3.0)
+      react-source (~> 0.13.3)
     minitest (5.9.0)
     multi_json (1.12.1)
     padrino-helpers (0.13.2)
@@ -107,6 +109,7 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    react-source (0.13.3)
     sass (3.4.22)
     servolux (0.12.0)
     thor (0.19.1)
@@ -123,10 +126,10 @@ PLATFORMS
 DEPENDENCIES
   middleman (>= 4.0.0)
   middleman-compass (>= 4.0.0)
-  middleman-jquery (~> 2.1, >= 2.1.1)
   middleman-livereload
+  middleman-react
   tzinfo-data
   wdm (~> 0.1.0)
 
 BUNDLED WITH
-   1.11.2
+   1.12.4
