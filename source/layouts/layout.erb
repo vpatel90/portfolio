@@ -8,7 +8,6 @@
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Vivek Patel" %></title>
-
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
@@ -22,8 +21,9 @@
 
   <body class="<%= page_classes %>">
     <nav class="nav">
+    <% link_to "#main1" do%>
     <span class="logo">VNP</span>
-
+    <% end %>
       <ul>
         <li id="home" class="home"><%=link_to "Home", "#main1"%></li>
         <li id="projects" class="projects"><%=link_to "Projects", "#main2" %></li>
