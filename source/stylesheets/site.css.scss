@@ -1,7 +1,8 @@
 @charset "utf-8";
 @import "normalize";
 
-$primary: #75ADD2;
+// $primary: #75ADD2;
+$primary: #1F3145;
 
 h1, h2, h3, h4, h5 , h6 {
 	font-family: 'Lato', sans-serif;
@@ -89,12 +90,13 @@ body {
 }
 
 header {
-  width: 9.845em;
+  width: 11.445em;
   margin: 0 auto 0 10%;
   padding-top: 0.1em;
   h1 {
     animation: slideIn 2s;
     font-weight: lighter;
+    font-size: 2.5em;
   }
 }
 
@@ -130,7 +132,7 @@ header {
 article {
   animation: fadeIn 4s;
   padding: 2em;
-  font-size: 0.95em;
+  font-size: 1.15em;
   line-height: 1.4em;
   color: lighten(black, 25%);
   transition: all 0.3s ease;
@@ -190,7 +192,7 @@ article {
     left: 2em;
   }
   article {
-    padding: 2em 10em 2em 20em;
+    padding: 2em 10em 2em 17em;
   }
   .profile-pic {
     float: left;

@@ -1,4 +1,3 @@
-
 var ready;
 ready = function() {
 	var home = document.getElementById("home");
