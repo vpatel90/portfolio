@@ -22,6 +22,10 @@ ready = function() {
 		underline.style.width = "3.7em";
 
 	});
+
+	$('.image').mouseover(function(target) {
+		console.log(target.toElement);
+	});
 }
 
 $(document).ready(ready);
