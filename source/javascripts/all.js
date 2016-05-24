@@ -319,9 +319,9 @@ var ready;
 ready = function() {
 	$('.nav a').smoothScroll();
 
-	var home = document.getElementById("home");
-	var projects = document.getElementById("projects");
-	var contact = document.getElementById("contact");
+	var home = document.getElementById("home").children[0];
+	var projects = document.getElementById("projects").children[0];
+	var contact = document.getElementById("contact").children[0];
 	var underline = document.getElementById("underline");
 
 	home.addEventListener('click', function(){

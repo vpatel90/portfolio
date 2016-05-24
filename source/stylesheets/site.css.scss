@@ -49,7 +49,13 @@ body {
 
 
 .nav {
+  background-color: rgba(255,255,255, 0.90);  
+  z-index: 5;
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6em;
   margin-top: -1em;
   .underline {
     animation: fadeIn 3s;
@@ -155,6 +161,8 @@ article {
 .project-article {
   padding: 0 2em;
   font-size: 1em;
+  margin-top: -7em;
+  
 }
 
 main {
@@ -163,12 +171,10 @@ main {
 }
 
 .main1 {
-
   min-height: 96vh;
 }
 
 .main2 {
-  padding-top: 1.5em;
 
   min-height: 96vh;
 
@@ -201,10 +207,17 @@ main {
       -webkit-filter: blur(3px) brightness(0.85);
     }
   }
+
   article {
     padding-bottom: 2em;
   }
 }
+
+.main3 {
+  min-height: 96vh;
+
+}
+
 .hovereffect {
   width: 100%;
   height: 100%;
@@ -216,13 +229,18 @@ main {
 }
 
 .hovereffect .overlay {
+  display: block;
+
   width: 100%;
   height: 90%;
+  max-width: 330px;
+  min-height: 100px;
+  margin: 0 auto;
   margin-bottom: 0.75em;
   border-radius: 0.75em;
-  position: absolute;
+  position: relative;
   overflow: hidden;
-  top: 0;
+  top: -7em;
   left: 0;
   background-color: rgba(0,0,0,0.6);
   opacity: 0;
@@ -351,18 +369,18 @@ main {
 
 @media (min-width: 992px) {
   .logo {
-    left: 5em;
+    left: 7em;
 
+  }
+
+  .project-article {
+    margin-top: 0;
   }
 
   .nav {
     ul {
-      left: 15em;
+      left: 17em;
     }
-  }
-  .hexagon-wrapper {
-    top: 1em;
-    left: 2em;
   }
   .in-main1 {
     padding: 2em 10em 2em 17em;
