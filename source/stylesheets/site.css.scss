@@ -214,7 +214,36 @@ main {
 }
 
 .main3 {
-  min-height: 96vh;
+  .row {
+    margin: 0 auto;
+    padding-left: 2em;
+    div {
+      padding-bottom: 2em;
+    }
+  }
+  .fa {
+    color: $primary;
+    &:hover {
+      color: lighten($primary,35%);
+    }
+  }
+  a {
+    text-decoration: none;
+      color: $primary;
+
+    &:hover{
+      color: lighten($primary,35%);
+    }
+
+  }
+  .contact-text.first {
+    padding-left: 2em;
+  }
+  .contact-text {
+    position: relative;
+    padding-left: 1.5em;
+    top: -1em;
+  }
 
 }
 
