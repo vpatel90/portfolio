@@ -3,6 +3,7 @@
 
 // $primary: #75ADD2;
 $primary: #1F3145;
+$secondary: #F46971;
 
 h1, h2, h3, h4, h5 , h6 {
 	font-family: 'Lato', sans-serif;
@@ -37,6 +38,7 @@ body {
 
 
 .logo {
+  display: inline-block;
   color: $primary;
   font-family: 'museo300';
   font-size: 2em;
@@ -45,6 +47,13 @@ body {
   left: 0.75em;
   transition: all 0.3s ease;
   animation: fadeIn 2s;
+  border: solid 1px $primary;
+  padding: 3px 20px 0px 20px;
+  &:hover {
+    border: solid 1px $secondary;
+    color: $secondary;
+    -webkit-transform: scale(1.1) rotate(360deg);
+  }
 }
 
 
@@ -96,13 +105,16 @@ body {
       display: inline-block;
       margin: 0 0.9em;
       a {
+        display: inline-block;
+
         text-decoration: none;
         font-family: 'Lato', sans-serif;
         color: $primary;
         font-size: 0.9em;
         letter-spacing: 0.09em;
         &:hover {
-          color: lighten($primary, 35%);
+          color: $secondary;
+          -webkit-transform: scale(1.1);
         }
       }
     }
@@ -113,10 +125,14 @@ header {
   width: 11.445em;
   margin: 0 auto 0 10%;
   padding-top: 0.1em;
+
+
   h1 {
+    display: inline-block;
     animation: slideIn 2s;
     font-weight: lighter;
     font-size: 2.5em;
+
   }
 }
 
@@ -140,7 +156,7 @@ header {
     animation: fadeIn 4s;
     position: absolute;
     top: 5.5em;
-    right: 2.2em;
+    right: 3.2em;
     border-radius: 50%;
     height: 4em;
     width: 4em;
@@ -173,16 +189,18 @@ article {
 
 main {
   padding-top: 3.5em;
+  transition: all 0.3s ease;
 
 }
 
 .main1 {
-  min-height: 96vh;
+  min-height: 100vh;
+  border-right: solid 2em $secondary;
 }
 
 .main2 {
 
-  min-height: 96vh;
+  min-height: 100vh;
 
   .go-to {
     position: relative;
@@ -230,15 +248,17 @@ main {
   .fa {
     color: $primary;
     &:hover {
-      color: lighten($primary,35%);
+      color: $secondary;
     }
   }
   a {
     text-decoration: none;
       color: $primary;
+      display: inline-block;
 
     &:hover{
-      color: lighten($primary,35%);
+      color: $secondary;
+      -webkit-transform: scale(1.1);
     }
 
   }
@@ -381,10 +401,15 @@ main {
     }
   }
   .in-main1 {
-    padding: 2em 8em;
+    padding: 2em 6em;
     animation: fadeIn 3s;
 
   }
+
+  .main1 {
+    border-right: solid 5em $secondary;
+  }
+
   .profile-pic {
     img {
       animation: fadeIn 3s;
@@ -418,7 +443,11 @@ main {
     }
   }
   .in-main1 {
-    padding: 2em 10em 2em 17em;
+    padding: 2em 4em 2em 17em;
+  }
+
+  .main1 {
+    border-right: solid 7em $secondary;
   }
   .profile-pic {
     float: left;
