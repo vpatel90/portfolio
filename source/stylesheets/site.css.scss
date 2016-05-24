@@ -428,6 +428,10 @@ main {
 }
 
 @media (min-width: 992px) {
+  .hovereffect .overlay{
+    position: absolute;
+    top: 0;
+  }
   .logo {
     left: 7em;
 
