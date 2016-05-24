@@ -2,17 +2,58 @@
 title: Vivek Patel
 ---
 <div class="spotlight"></div>
+
+<main class="main1">
 <header>
   <div><h1>Who Am I?</h1></div>
 </header>
-<main>
   <div class="profile-pic"><img src="https://avatars1.githubusercontent.com/u/6004526?v=3&s=460"></div>
-  <article>
+  <article class="in-main1">
     <p>Hello and welcome to my page! My name is Vivek Patel and I am a web devloper based in Austin, TX.
        I enjoy building all sorts of apps, ranging from small business sites to interactive web games!</p>
     <p>I am a code school graduate from The Iron Yard, where I primarily learned Ruby on Rails. My skillset also includes
        HTML, CSS, JavaScript, along with use of various libraries such as jQuery, React and others.</p>
     <p>If you feel like I can assist you in anyway, feel free to reach out to me!</p>
+  </article>
+</main>
+<main class="main2">
+<header>
+  <div><h1>My Work!</h1></div>
+</header>
+  <article class="row">
+  	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+  	<%= image_tag 'bluehair.png', class:'img-responsive image' %>
+  	</div>
+  	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+  		<article class="project-article">
+  		Blue Hair is a Reddit clone and it was one of the first complete apps I made using Rails. This app's gave me an insight on pagination, creating custom routes, using polymorphic associations and user authentication.
+  		</article>
+  	</div>
+  </article>
+
+  <article class="row">	
+  	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+  	<%= image_tag 'bba.png', class:'img-responsive image' %>
+  	</div>
+  	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+  		<article class="project-article">
+  		BBA or Best Burgers of Austin was a group project where I was
+  		the back end developer. My group consisted of two frontend javascript developers and a designer. This showcases a complete rails API with all the necessary CRUD actions necessary for the project. This project was a great experience working with a team full of different skillsets.
+  		</article>
+  	</div>
+  </article>
+
+
+  <article class="row">	
+  	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+  	<%= image_tag 'plunder.png', class:'img-responsive image' %>
+  	</div>
+  	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+  		<article class="project-article">
+  		Plunder is a game based on a board game called Loot. This was
+  		my final project at The Iron Yard coding school. This is a complete multiplayer web-game built in 2 weeks. The game uses a Rails backend and a frontend built almost entirely in React. This project pushed my limits for the two weeks, I learned CSS animations, Rails Jobs, and wrote over a dozen React components.
+  		</article>
+  	</div>
   </article>
 
 </main>

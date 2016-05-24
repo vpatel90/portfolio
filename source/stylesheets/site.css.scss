@@ -6,6 +6,7 @@ $primary: #1F3145;
 
 h1, h2, h3, h4, h5 , h6 {
 	font-family: 'Lato', sans-serif;
+  color: $primary;
 }
 
 body {
@@ -48,6 +49,7 @@ body {
 
 
 .nav {
+  position: fixed;
   margin-top: -1em;
   .underline {
     animation: fadeIn 3s;
@@ -61,8 +63,11 @@ body {
     transition: all 0.15s ease-out;
   }
   ul {
+    display: inline-block;
+    position: relative;
+    top: 2.8em;
+    right: -6.5em;
     width: 16.14em; 
-    margin: 0 0 0 auto;
     padding: 0;
     .home {
       animation-duration: 1s;
@@ -81,9 +86,12 @@ body {
       a {
         text-decoration: none;
         font-family: 'Lato', sans-serif;
-        color: black;
+        color: $primary;
         font-size: 0.9em;
         letter-spacing: 0.09em;
+        &:hover {
+          color: lighten($primary, 35%);
+        }
       }
     }
   }
@@ -129,14 +137,48 @@ header {
   }
 }
 
+.in-main1{
+  padding: 2em;
+
+}
 article {
   animation: fadeIn 4s;
-  padding: 2em;
   font-size: 1.15em;
   line-height: 1.4em;
   color: lighten(black, 25%);
   transition: all 0.3s ease;
 
+}
+
+.image {
+  max-width: 330px;
+  max-height: 103px;
+  margin: 0 auto;
+}
+
+.project-article {
+  padding: 0 2em;
+  font-size: 1em;
+}
+
+main {
+  padding-top: 3.5em;
+  
+}
+
+.main1 {
+
+  min-height: 96vh;
+}
+
+.main2 {
+  min-height: 96vh;
+  img {
+    margin-bottom: 0.75em;
+  }
+  article {
+    padding-bottom: 2em;
+  }
 }
 
 @media(max-width: 322px){
@@ -160,10 +202,10 @@ article {
   }
   .nav {
     ul {
-      margin: 0 auto;
+      left: 6em;
     }
   }
-  article {
+  .in-main1 {
     padding: 2em 8em;
     animation: fadeIn 3s;
 
@@ -180,6 +222,9 @@ article {
       box-shadow: 0px 0px 3px 2px #777;
     }
   }
+  .project-article {
+    padding: 0em 3em;
+  }
 }
 
 @media (min-width: 992px) {
@@ -187,11 +232,17 @@ article {
     left: 5em;
 
   }
+
+  .nav {
+    ul {
+      left: 15em;
+    }
+  }
   .hexagon-wrapper {
     top: 1em;
     left: 2em;
   }
-  article {
+  .in-main1 {
     padding: 2em 10em 2em 17em;
   }
   .profile-pic {
