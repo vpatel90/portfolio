@@ -52,7 +52,7 @@ body {
   &:hover {
     border: solid 1px $secondary;
     color: $secondary;
-    -webkit-transform: scale(1.1) rotate(360deg);
+    -webkit-transform: scale(1.1) rotateZ(360deg);
   }
 }
 
@@ -405,6 +405,12 @@ main {
     padding: 2em 6em;
     animation: fadeIn 3s;
 
+  }
+
+  .logo {
+    &:hover {
+      -webkit-transform: scale(1.1) rotateZ(360deg); 
+    }
   }
 
   .main1 {
