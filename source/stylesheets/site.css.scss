@@ -3,7 +3,7 @@
 
 // $primary: #75ADD2;
 $primary: #1F3145;
-$secondary: #F46971;
+$secondary: lighten(#1F3145,30%);
 
 h1, h2, h3, h4, h5 , h6 {
 	font-family: 'Lato', sans-serif;
@@ -11,7 +11,11 @@ h1, h2, h3, h4, h5 , h6 {
 }
 
 body {
-  font-family: 'Lato', sans-serif;  
+  font-family: 'Lato', sans-serif;
+	p, article{
+		color: $primary;
+	}
+	background-color: rgb(247,247,247);
 }
 
 @keyframes slideIn {
@@ -64,7 +68,7 @@ body {
         text-decoration: none;
       }
     }
-  background-color: rgba(255,255,255, 0.90);  
+  background-color: rgba(247,247,247, 0.90);
   z-index: 5;
   position: fixed;
   top: 0;
@@ -88,7 +92,7 @@ body {
     position: relative;
     top: 1.5em;
     right: -3.5em;
-    width: 17.14em; 
+    width: 17.14em;
     padding: 0;
     .home {
       animation-duration: 1s;
@@ -148,7 +152,7 @@ header {
   to {
     opacity: 1;
   }
-  
+
 }
 
 .profile-pic {
@@ -184,7 +188,7 @@ article {
   padding: 0 2em;
   font-size: 1em;
   margin-top: -7em;
-  
+
 }
 
 main {
@@ -210,7 +214,7 @@ main {
     a {
       margin: 0 auto;
     }
-    
+
     top: -2.5em;
     left: 2.5em;
     font-size: 2em;
@@ -301,11 +305,7 @@ main {
   background-color: rgba(0,0,0,0.6);
   opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-transform: translate(460px, -100px) rotate(180deg);
-  -ms-transform: translate(460px, -100px) rotate(180deg);
-  transform: translate(460px, -100px) rotate(180deg);
-  -webkit-transition: all 0.2s 0.4s ease-in-out;
-  transition: all 0.2s 0.4s ease-in-out;
+
 }
 
 .hovereffect img {
@@ -409,7 +409,7 @@ main {
 
   .logo {
     &:hover {
-      -webkit-transform: scale(1.1) rotateZ(360deg); 
+      -webkit-transform: scale(1.1) rotateZ(360deg);
     }
   }
 
